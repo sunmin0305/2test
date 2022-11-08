@@ -4,20 +4,42 @@
     <title>WEB1 - JavaScript</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="colors.js"></script>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <input type="button" value="naight" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    "> 
+
+                <!--
+                <input type="button" value="night" onclick="
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='white';
+                "> 
+                <input id="night_day" type="button" value="night" onclick="
+                if (document.querySelector('#night_day').value === 'night') {
+                    document.querySelector('body').style.backgroundColor='black';
+                    document.querySelector('body').style.color='white';
+                    document.querySelector('#night_day').value = 'day';
+                } else {
+                    document.querySelector('body').style.backgroundColor='white';
+                    document.querySelector('body').style.color='black';
+                    document.querySelector('#night_day').value = 'night';
+                }
+                ">
+            -->
+
 
     <div id="grid">
+        <div style="padding-top: 12px;">
+        <input type="button" class="css-gui-13vw8i4" value="night" onclick="
+        nightDayHandler(this)
+        ">
+
         <ol>
         <li><a href="1.html" class="saw">HTML</a></li>
         <li><a href="2.html" class="saw">CSS</a></li>
         <li><a href="3.html" style="color: orchid; text-decoration:underline">JavaScript</a></li>
         </ol>
+    </div>
         <div id="article">
         <h2>JavaScript</h2> <p>is an <u>open-source</u>, <strong>free HTML editor</strong> from <a href="http://10.17.19.71:8081/wisdom/login.do" target="_blank" title="tool tip test">Microsoft built on Github’s Electron</a>. With this framework, users can create projects using HTML, CSS, and JavaScript across multiple operating systems. 
         </p>
